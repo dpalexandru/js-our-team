@@ -45,15 +45,15 @@ const generaCard = (member) => {
     const { name, role, email, img } = member;
 
     const cardSingola = `
-                 <div class="col-12 col-sm-6 col-md-4">
+              <div class="col-12 col-sm-6 col-lg-4">
                     <div class="card">
                         <div class="img-container">
                             <img class="img" src="./assets/${img}" alt="">
                         </div>
                         <div class="text-container">
-                            <h3>${name}</h3>
-                            <p>${role}</p>
-                            <p>${email}</p>
+                            <h3 class="nome">${name}</h3>
+                            <p class="role">${role}</p>
+                            <p class="email">${email}</p>
                         </div>
                     </div>
                 </div> 
