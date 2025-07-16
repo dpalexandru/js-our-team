@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/***CARD**/
+
+.card {
+    background-color: black;
+    height: 100px;
+    width: 300px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+img {
+    height: 100px;
+    width: 100px;
+}
