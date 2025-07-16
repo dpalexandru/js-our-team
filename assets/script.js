@@ -68,11 +68,27 @@ for (let i = 0; i < teamMembers.length; i++) {
     cardContainer.innerHTML += card;
 }
 
-////-----------Parte FORM-------------
-// Pulsante per aprire il form aggiunginuovo membro
+////-----------Parte FORM-------------// Pulsante per aprire il form aggiunginuovo membro
 const aggiungiNuovoMembro = document.getElementById("aggiungiNuovoMembro");
 const formContainer = document.getElementById("formContainer");
 
 aggiungiNuovoMembro.addEventListener("click", () => {
     formContainer.classList.toggle("d-none");
+});
+
+// Pulsante per inserire i dati del form in html
+aggiungiMembroBtn.addEventListener("click", (e) => {
+    e.preventDefault(); //Non aggiornare la pagina 
+
+    if (!name || !role || !email || !img) {
+        alert("Per favore compila tutti i campi!");
+        return; // Se uno dei campi è vuoto esci
+    }
+
+    // Recupero i dati dal form
+    const name = document.getElementById("inputName").value;
+    const role = document.getElementById("inputRole").value;
+    const email = document.getElementById("inputEmail").value;
+    const img = document.getElementById("inputImage").value;
+
 });
