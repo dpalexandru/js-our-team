@@ -35,6 +35,9 @@ const teamMembers = [{
         img: "img/female3.png"
     }
 ];
+//Recupero elementi Dom 
+const cardContainer = document.getElementById('cardContainer')
+
 
 // Creo funzione che genera struttura della card
 const generaCard = () => {
@@ -54,3 +57,10 @@ const generaCard = () => {
                 `
     return cardSingola;
 };
+
+// Ciclo gli elemnti dell'array e inserisco ogniuno in pagina html 
+
+for (let i = 0; i < teamMembers.length; i++) {
+    let card = generaCard(teamMembers[i]);
+    cardContainer.innerHTML += card;
+}
