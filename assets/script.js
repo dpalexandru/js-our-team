@@ -77,18 +77,33 @@ aggiungiNuovoMembro.addEventListener("click", () => {
 });
 
 // Pulsante per inserire i dati del form in html
+const aggiungiMembroBtn = document.getElementById("aggiungiMembroBtn");
+
 aggiungiMembroBtn.addEventListener("click", (e) => {
     e.preventDefault(); //Non aggiornare la pagina 
+    // Recupero i dati dal form
+    const name = document.getElementById("inputName").value;
+    const role = document.getElementById("inputRole").value;
+    const email = document.getElementById("inputEmail").value;
+    const img = document.getElementById("inputImage").value;
 
     if (!name || !role || !email || !img) {
         alert("Per favore compila tutti i campi!");
         return; // Se uno dei campi è vuoto esci
     }
 
-    // Recupero i dati dal form
-    const name = document.getElementById("inputName").value;
-    const role = document.getElementById("inputRole").value;
-    const email = document.getElementById("inputEmail").value;
-    const img = document.getElementById("inputImage").value;
+    // Creo oggetto nuovo membro
+    const nuovoMembro = {
+        name,
+        role,
+        email,
+        img
+    };
+
+    const nuovaCard = generaCard(nuovoMembro); //richiamo la funzione gera card
+
+    cardContainer.innerHTML += nuovaCard;
+
+    //Reset tutti i campi 
 
 });
