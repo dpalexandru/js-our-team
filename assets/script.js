@@ -40,17 +40,20 @@ const cardContainer = document.getElementById('cardContainer')
 
 
 // Creo funzione che genera struttura della card
-const generaCard = () => {
+const generaCard = (member) => {
+    //Destrutturo l'array
+    const { name, role, email, img } = member;
+
     const cardSingola = `
                  <div class="col-12 col-sm-6 col-md-4">
                     <div class="card">
                         <div class="img-container">
-                            <img class="img" src="./assets/img/female1.png" alt="">
+                            <img class="img" src="./assets/${img}" alt="">
                         </div>
                         <div class="text-container">
-                            <h3>Marco</h3>
-                            <p>SEO specialist</p>
-                            <p>Email</p>
+                            <h3>${name}</h3>
+                            <p>${role}</p>
+                            <p>${email}</p>
                         </div>
                     </div>
                 </div> 
