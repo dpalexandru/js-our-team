@@ -67,3 +67,12 @@ for (let i = 0; i < teamMembers.length; i++) {
     let card = generaCard(teamMembers[i]);
     cardContainer.innerHTML += card;
 }
+
+////-----------Parte FORM-------------
+// Pulsante per aprire il form aggiunginuovo membro
+const aggiungiNuovoMembro = document.getElementById("aggiungiNuovoMembro");
+const formContainer = document.getElementById("formContainer");
+
+aggiungiNuovoMembro.addEventListener("click", () => {
+    formContainer.classList.toggle("d-none");
+});

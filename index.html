@@ -11,6 +11,8 @@
 
 <body>
     <header>
+
+        <!--Intestazione pagina-->
         <div class="container text-center">
             <h1 class="title"> Meet your Team</h1>
             <p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum, quibusdam! Quas iste voluptate, architecto, eveniet voluptatem voluptas totam aliquam neque facilis, hic illum harum rem saepe deserunt aut autem ex.</p>
@@ -18,6 +20,8 @@
     </header>
     <main>
         <div class="container">
+
+            <!--Qui verranno inserite tutte le card dell'array-->
             <div class="row align-items-center g-4" id="cardContainer">
 
             </div>
@@ -27,6 +31,34 @@
     </main>
     <footer>
 
+        <!--Pulsante aggiungi nuovo membro fa comparire il form-->
+        <div class="row mt-4">
+            <button id="aggiungiNuovoMembro" class="btn btn-primary ">Aggiungi nuovo membro</button>
+        </div>
+        <!--Form per inserire nuovo membro-->
+        <div class="container d-none" id="formContainer">
+            <form class="row g-3 mt-4">
+                <div class="col-md-6">
+                    <label for="inputName" class="form-label">Nome</label>
+                    <input type="text" class="form-control" id="inputName" placeholder="Mario Rossi">
+                </div>
+                <div class="col-md-6">
+                    <label for="inputRole" class="form-label">Ruolo</label>
+                    <input type="text" class="form-control" id="inputRole" placeholder="Front-end Developer">
+                </div>
+                <div class="col-md-6">
+                    <label for="inputEmail" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="inputEmail" placeholder="nome@esempio.com">
+                </div>
+                <div class="col-md-6">
+                    <label for="inputImage" class="form-label">Percorso immagine</label>
+                    <input type="text" class="form-control" id="inputImage" placeholder="img/....png">
+                </div>
+                <div class="col-12 text-end">
+                    <button type="submit" class="btn btn-primary">Aggiungi</button>
+                </div>
+            </form>
+        </div>
     </footer>
 
 
