@@ -23,7 +23,6 @@
 
             <!--Qui verranno inserite tutte le card dell'array-->
             <div class="row align-items-center g-4" id="cardContainer">
-
             </div>
 
         </div>
@@ -32,41 +31,39 @@
     <footer>
 
         <!--Pulsante aggiungi nuovo membro fa comparire il form-->
-        <div class="row mt-4">
-            <button id="aggiungiNuovoMembro" class="btn btn-primary ">Aggiungi nuovo membro</button>
-        </div>
-        <!--Form per inserire nuovo membro-->
-        <div class="container d-none" id="formContainer">
-            <form class="row g-3 mt-4">
-                <div class="col-md-6">
-                    <label for="inputName" class="form-label">Nome</label>
-                    <input type="text" class="form-control" id="inputName" placeholder="Mario Rossi">
+        <div class="container">
+            <div class="row mt-4">
+                <div class="col text-end">
+                    <button id="aggiungiNuovoMembro" class="btn btn-primary">Aggiungi nuovo membro</button>
                 </div>
-                <div class="col-md-6">
-                    <label for="inputRole" class="form-label">Ruolo</label>
-                    <input type="text" class="form-control" id="inputRole" placeholder="Front-end Developer">
-                </div>
-                <div class="col-md-6">
-                    <label for="inputEmail" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="inputEmail" placeholder="nome@esempio.com">
-                </div>
-                <div class="col-md-6">
-                    <label for="inputImage" class="form-label">Percorso immagine</label>
-                    <input type="text" class="form-control" id="inputImage" placeholder="img/....png">
-                </div>
-                <div class="col-12 text-end">
-                    <button type="submit" id="aggiungiMembroBtn" class="btn btn-primary">Aggiungi</button>
-                </div>
-            </form>
+            </div>
+            <!--Form per inserire nuovo membro-->
+
+            <div class="container d-none mb-5" id="formContainer">
+                <form class="row g-3 mt-4">
+                    <div class="col-md-6">
+                        <label for="inputName" class="form-label">Nome</label>
+                        <input type="text" class="form-control" id="inputName" placeholder="Mario Rossi">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputRole" class="form-label">Ruolo</label>
+                        <input type="text" class="form-control" id="inputRole" placeholder="Front-end Developer">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputEmail" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="inputEmail" placeholder="nome@esempio.com">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputImage" class="form-label">Percorso immagine</label>
+                        <input type="text" class="form-control" id="inputImage" placeholder="img/....png">
+                    </div>
+                    <div class="col-12 text-end">
+                        <button type="submit" id="aggiungiMembroBtn" class="btn btn-primary">Aggiungi</button>
+                    </div>
+                </form>
+            </div>
         </div>
     </footer>
-
-
-
-
-
-
-
 
     <script src="./assets/script.js"></script>
 </body>

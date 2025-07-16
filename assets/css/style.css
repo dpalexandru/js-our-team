@@ -73,3 +73,14 @@
     color: #1A6DB4;
     font-size: 13px;
 }
+
+#aggiungiNuovoMembro,
+#aggiungiMembroBtn {
+    background-color: #f5297c;
+    border: none;
+}
+
+#aggiungiNuovoMembro:hover,
+#aggiungiMembroBtn:hover {
+    background-color: #c51d63;
+}

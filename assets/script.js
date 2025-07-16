@@ -105,5 +105,11 @@ aggiungiMembroBtn.addEventListener("click", (e) => {
     cardContainer.innerHTML += nuovaCard;
 
     //Reset tutti i campi 
+    document.getElementById('inputName').value = '';
+    document.getElementById('inputRole').value = '';
+    document.getElementById('inputEmail').value = '';
+    document.getElementById('inputImage').value = '';
+    //Nascondo il form 
+    formContainer.classList.add("d-none");
 
 });
